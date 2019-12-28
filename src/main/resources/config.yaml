@@ -14,10 +14,6 @@ kumuluzee:
     checks:
       etcd-health-check:
         connection-url: http://etcd:2379/health
-  metrics:
-    web-instrumentation:
-      - name: users-endpoint
-        url-pattern: /v1/users/*
   logs:
     config-file: '<?xml version="1.0" encoding="UTF-8"?>
                   <Configuration name="sharing">
@@ -39,11 +35,6 @@ kumuluzee:
                   </Configuration>'
 
 configuration-properties:
-  demo-etcd-parameter: file
-  demo-service-is-healthy: true
   db-url: jdbc:mysql://10.67.0.3:3306/sharing
   db-user: root
   db-password: lPKKoBPxlnzhkkrn
-  gcp-project: grmek-rso
-  gcp-key: <hidden>
-  gcp-storage-bucket: grmek-rso-storage-bucket
