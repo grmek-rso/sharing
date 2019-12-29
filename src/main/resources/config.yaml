@@ -33,6 +33,10 @@ kumuluzee:
                       </Root>
                     </Loggers>
                   </Configuration>'
+  grpc:
+    server:
+      http:
+        port: 8182
 
 configuration-properties:
   db-url: jdbc:mysql://10.67.0.3:3306/sharing
